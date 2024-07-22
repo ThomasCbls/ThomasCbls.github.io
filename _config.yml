@@ -47,7 +47,7 @@ author_work_experiences:
               designation: Azure Developer
               description: Worked on various Azure Cloud Products
               visibility: false
-              - company_name: Suite office
+            - company_name: Suite office
               company_logo: google.png
               company_url: https://www.office.com/
               designation: Software Engineer
@@ -62,7 +62,7 @@ author_education_details:
                 college_degree: CS Engineer
                 description: Bachelor of Technology
                 visibility: false
-                 - college_logo: mit.png
+              - college_logo: mit.png
                 college_name: 3IFA
                 college_url: https://www.3ifa.fr/
                 college_degree: Analyste-Programmeur

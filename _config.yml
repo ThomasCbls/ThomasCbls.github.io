@@ -1,23 +1,23 @@
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: Thomas Camboulas
+subtitle: PortFolio
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  Bienvenue sur mon PortFolio :D
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
-    - text: Home
+    - text: Accueil
       url: /
-    - text: About
+    - text: À propos de moi
       url: /about
-    - text: Blog
+    - text: Ma veille
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
+    # - text: Gallery
+    #   url: /gallery
+    # - text: Shop
+    #   url : /shop
     - text: Contact
       url : /contact
 

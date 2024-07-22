@@ -61,18 +61,21 @@ author_education_details:
                 college_url: https://mit.org
                 college_degree: CS Engineer
                 description: Bachelor of Technology
+                icon: 3ifa.png
                 visibility: false
               - college_logo: mit.png
                 college_name: 3IFA
                 college_url: https://www.3ifa.fr/
                 college_degree: Alternant BTS SIO
                 description: BTS SIO
+                icon: 3ifa.png
                 visibility: true
               - college_logo: /assets/img/3ifa.png
                 college_name: Lycée Robert Garnier
                 college_url: https://robert-garnier.paysdelaloire.e-lyco.fr/
                 college_degree: BAC STI2D
                 description: BAC STI2D option Energie et Environnement
+                icon: lycee.png
                 visibility: true
 
 # Projects

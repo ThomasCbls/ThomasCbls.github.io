@@ -65,8 +65,14 @@ author_education_details:
               - college_logo: mit.png
                 college_name: 3IFA
                 college_url: https://www.3ifa.fr/
-                college_degree: Analyste-Programmeur
+                college_degree: Alternant BTS SIO
                 description: BTS SIO
+                visibility: true
+              - college_logo: mit.png
+                college_name: 3IFA
+                college_url: https://www.3ifa.fr/
+                college_degree: BTS SIO
+                description: Alernant en BTS SIO
                 visibility: true
 
 # Projects

@@ -171,7 +171,7 @@ layout: default
       <div class="row">
         <div class="col-md-2">
           <img 
-            src="/assets/img/3ifa.png"
+            src="/assets/img/{{detail.icon}}"
             class="company-logo"
           />
         </div>
@@ -182,7 +182,6 @@ layout: default
           <p class="experience-desc">{{detail.description}}</p>
           <p><a href="{{detail.college_url}}">{{ detail.college_url}}</a></p>
         </div>
-      </div>
       {% endif %} {% endfor %}
     </div>
     {% endif %}

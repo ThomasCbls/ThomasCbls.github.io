@@ -1,6 +1,6 @@
 ---
 name: Thomas Camboulas
-username: ThomasCbls
+username: thomascbls
 bio: "Bonjour ! Je suis Thomas Camboulas, voici mon PortFolio :D"
 site: https://thomascbls.github.io
 avatar: johndoe.png

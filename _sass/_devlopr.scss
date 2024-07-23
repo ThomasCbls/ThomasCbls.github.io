@@ -572,7 +572,7 @@ header {
 
 /* floating btn for buy me coffee */
 #bmc-wbtn{
-    display:none;
+    display:none !important;
     bottom: 40px !important;
 }
 

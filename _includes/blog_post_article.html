@@ -34,21 +34,20 @@
       style=" width: 50%;
               margin: auto;
               display: flex;"/>
+    {{ content }}
     <br />
-    <br />
-         {{ content }} 
-       <br />
     {%- include share_page.html -%}
     <!-- Author box -->
-<!--     {% assign author = site.data.authors[page.author] %}
+    {% assign author = site.data.authors[page.author] %}
       {% if author %}
       {% include author.html %}
     {% endif %}
-@@ -49,7 +49,7 @@ <h4 class="post-meta">{{ page.summary }}</h4>
+  </div>
+  {%- if site.hyvor_talk_website_id -%}
   <div class="comments">
     {%- include hyvor_comments.html -%}
    </div>
-    {%- endif -%} -->
+    {%- endif -%}
   <!-- Incomment incase you want to use Disqus
       <div id="disqus_thread"></div>
    -->

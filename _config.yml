@@ -95,6 +95,7 @@ author_project_details:
                 project_description: Project réalisé en période scolaire.
                 project_url: https://hack4r.com
                 icon : ethoryam.png
+                object-fit: contain;
                 visibility: true
               - project_thumbnail: hack4r.PNG
                 project_title: VTT
@@ -102,6 +103,7 @@ author_project_details:
                 project_url: https://hack4r.com
                 icon : vtt.png
                 visibility: true
+                object-fit: contain;
 
 
 

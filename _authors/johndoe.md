@@ -1,15 +1,15 @@
 ---
-name: John Doe
-username: johndoe
-bio: "Hi I a John, a Web Developer and Designer."
-site: http://johndoe.com
+name: Thomas Camboulas
+username: ThomasCbls
+bio: "Bonjour ! Je suis Thomas Camboulas, voici mon PortFolio :D"
+site: https://thomascbls.github.io
 avatar: johndoe.png
-email: mail@johndoe.com
+email: camboulasthomas@gmail.com
 social:
     - title: "github"
-      url: "https://github.com/johndoe"
+      url: "https://github.com/ThomasCbls"
     - title: "linkedin"
-      url: "https://www.linkedin.com/in/johndoe"
+      url: "https://www.linkedin.com/in/thomas-camboulas-88a5b6310"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
     - title: "facebook"

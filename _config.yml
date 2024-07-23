@@ -47,11 +47,11 @@ author_work_experiences:
               designation: Azure Developer
               description: Worked on various Azure Cloud Products
               visibility: false
-            - company_name: Suite office
-              company_logo: google.png
-              company_url: https://www.office.com/
-              designation: Software Engineer
-              description: Manipulation des différents outils d'office 365
+            - company_name: MTB111
+              company_logo: mtb111.png
+              company_url: https://www.mtb-generative.com/
+              designation: Analyste-Programmeur
+              description: Utilisation de divers langages pour developper et debugger un logiciel ou une application.
               visibility: true
 
 # Education

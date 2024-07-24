@@ -11,14 +11,6 @@
         >{{ page.date | date: "%b %-d, %Y" }}</time
       >
     </p>
-    <span
-      class="disqus-comment-count"
-      data-disqus-identifier="{{ page.url }}"
-    ></span>
-      {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
-    </div>
-  </div>
-
   <div class="card-body" itemprop="articleBody">
     <img
       class="card-img-top"

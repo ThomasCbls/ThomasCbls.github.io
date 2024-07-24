@@ -24,7 +24,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: PhotoProfile.png
+author_logo: PhotoProfil.png
 author: Thomas Camboulas
 author_bio: |
   Je m'appelle Thomas Camboulas, étudiant en BTS Services Informatiques aux Organisations (SIO) avec une spécialisation en Solutions Logicielles et Applications Métiers (SLAM). Actuellement en alternance, je me consacre pleinement à acquérir des compétences pratiques et théoriques dans le domaine de l'informatique.

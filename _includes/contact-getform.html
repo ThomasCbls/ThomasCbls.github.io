@@ -1,7 +1,7 @@
 <!-- Getform form https://getform.io -->
 
 <!-- Add the getform-endpoint in config.yml -->
-<form action="mailto:camboulasthomas@gmail.com" enctype="multipart/form-data" method="POST"  target="_blank">
+<form action="mailto:camboulasthomas@gmail.com" enctype="multipart/form-data" method="GET"  target="_blank">
     <div class="form-group">
             <label for="contact_form_name">Sujet</label>
             <input type="text" class="form-control" name="subject" id="contact_form_name" placeholder="Nom">
@@ -9,10 +9,6 @@
            <div class="form-group">
              <label for="contact_form_message">Votre message :</label>
             <textarea name="body" class="form-control" id="contact_form_message" placeholder="Votre Message"></textarea>
-           </div>
-           <div class="form-group">
-               <label for="contact-form-file"> Pièces jointes :</label>
-            <input type="file" name="file" class="form-control" id="contact-form-file" placeholder="Attach files"/>
            </div>
             <button type="submit" value="Send" class="btn btn-lg btn-dark">Envoyer</button>
 </form>

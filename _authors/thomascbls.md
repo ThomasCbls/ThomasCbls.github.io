@@ -3,7 +3,7 @@ name: Thomas Camboulas
 username: thomascbls
 bio: "Bonjour ! Je suis Thomas Camboulas, voici mon PortFolio :D"
 site: https://thomascbls.github.io
-avatar: johndoe.png
+avatar: PhotoProfil.png
 email: camboulasthomas@gmail.com
 social:
     - title: "github"

@@ -3,16 +3,12 @@
 <!-- Add the getform-endpoint in config.yml -->
 <form action="https://getform.io/f/{{site.getform_endpoint}}" enctype="multipart/form-data" method="POST"  target="_blank">
     <div class="form-group">
-            <label for="contact_form_name">Votre nom :</label>
-            <input type="text" class="form-control" name="name" id="contact_form_name" placeholder="Nom">
+            <label for="contact_form_name">Sujet</label>
+            <input type="text" class="form-control" name="subject" id="contact_form_name" placeholder="Nom">
            </div>
            <div class="form-group">
-             <label for="contact_form_email">Votre Email :</label>
-            <input type="email" class="form-control" name="email" id="contact_form_email" placeholder="Email">
-           </div>
-           <div class="form-group">
-             <label for="contact_form_message">votre message :</label>
-            <textarea name="message" class="form-control" id="contact_form_message" placeholder="Votre Message"></textarea>
+             <label for="contact_form_message">Votre message :</label>
+            <textarea name="body" class="form-control" id="contact_form_message" placeholder="Votre Message"></textarea>
            </div>
            <div class="form-group">
                <label for="contact-form-file"> Pièces jointes :</label>

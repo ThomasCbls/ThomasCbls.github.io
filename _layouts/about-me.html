@@ -36,7 +36,7 @@ layout: default
             </a>
           {% endif %}
           {% if site.github_username %}
-            <a class="social-link" href="http://github.com/{{ site.github_username }}">
+            <a class="social-link" href="http://github.com/{{ site.github_username }}" target="_blank">
               <i class="fab fa-github"></i>
             </a>
           {% endif %}
@@ -46,7 +46,7 @@ layout: default
             </a>
           {% endif %}
           {% if site.linkedin_username %}
-            <a class="social-link" href="http://linkedin.com/in/{{ site.linkedin_username }}">
+            <a class="social-link" href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
               <i class="fab fa-linkedin-in"></i>
             </a>
           {% endif %}
@@ -69,25 +69,25 @@ layout: default
 
         {% if site.author_location %}
           <h6>
-            <a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" class="social-link">
+            <a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" target="_blank" class="social-link">
               <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}
             </a>
           </h6>
         {% endif %}
-        {% if site.author_email %}
+<!--         {% if site.author_email %}
           <h6>
             <a href="mailto:{{ site.author_email }}">
               <i class="fas fa-envelope" class="social-link"></i> {{ site.author_email }}
             </a>
           </h6>
-        {% endif %}
-        {% if site.author_website_url %}
+        {% endif %} -->
+<!--         {% if site.author_website_url %}
           <h6>
             <a href="{{ site.author_website_url }}">
               <i class="fas fa-link" class="social-link"></i> {{ site.author_website_url }}
             </a>
           </h6>
-        {% endif %}
+        {% endif %} -->
       </div>
 
       <div class="card">
@@ -152,7 +152,7 @@ layout: default
                   <h4 class="experience-title">{{ exp.designation }}</h4>
                   <h6 class="experience-info">{{ exp.company_name}}</h6>
                   <p class="experience-desc">{{ exp.description }}</p>
-                  <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
+                  <p><a href="{{exp.company_url}}" target="_blank">{{ exp.company_url}}</a></p>
                 </div>
               </div>
             {% endif %}
@@ -174,7 +174,7 @@ layout: default
                   <h4 class="experience-title">{{ detail.college_degree }}</h4>
                   <h6 class="experience-info">{{ detail.college_name }}</h6>
                   <p class="experience-desc">{{ detail.description }}</p>
-                  <p><a href="{{ detail.college_url }}">{{ detail.college_url }}</a></p>
+                  <p><a href="{{ detail.college_url }}" target="_blank">{{ detail.college_url }}</a></p>
                 </div>
               </div>
               <br />

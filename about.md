@@ -1,5 +1,5 @@
 ---
 title: About
-layout: projet
+layout: about me
 permalink: /about/
 ---

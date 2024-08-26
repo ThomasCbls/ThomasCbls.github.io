@@ -12,6 +12,8 @@ urls:
       url: /
     - text: À propos de moi
       url: /about
+    - text: Mon entreprise
+      url: /shop
     - text: Ma veille
       url: /blog
     # - text: Gallery

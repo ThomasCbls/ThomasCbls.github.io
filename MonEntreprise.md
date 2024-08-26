@@ -1,5 +1,5 @@
 ---
-title: Shop
+title: Mon Entreprise
 layout: MonEntreprise
 permalink: /MonEntreprise/
 ---

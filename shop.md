@@ -1,5 +1,5 @@
 ---
 title: Shop
-layout: MonEntreprise
-permalink: /MonEntreprise/
+layout: product
+permalink: /shop/
 ---

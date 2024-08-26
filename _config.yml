@@ -13,7 +13,7 @@ urls:
     - text: À propos de moi
       url: /about
     - text: Mon entreprise
-      url: /shop
+      url: /MonEntreprise
     - text: Mes projets
       url: /projet
     - text: Ma veille

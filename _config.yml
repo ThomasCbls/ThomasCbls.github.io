@@ -101,8 +101,18 @@ author_project_details:
                 project_url: https://hack4r.com
                 visibility: false
               - project_thumbnail: hack4r.PNG
+                project_title: Workflow sécurisé
+                project_description: Project réalisé en période d'entreprise. Ce projet a pour but de créer une application qui avec un raccourcis clavier de touche défini (par exemple A + Z+ E), organisant une réunion d'urgence. L'application enverra une notification accompagnée d'une sonorité qui alerterait les utilisateurs sélectionnés au préalable pour rejoindre la réunion. La notification d'urgence donnera l'information du titre de la réunion ainsi que le lieu.
+                icon : logoWks.png
+                visibility: true
+              - project_thumbnail: hack4r.PNG
+                project_title: RFTG
+                project_description: Project réalisé en période scolaire. Ce projet 
+                icon : logoRftg
+                visibility: true
+              - project_thumbnail: hack4r.PNG
                 project_title: ETHORYAM
-                project_description: Project réalisé en période scolaire. Ce projet avait pour but de créer une application qui avec un raccourcis clavier de touche défini (par exemple A + Z+ E), organisant une réunion d'urgence. L'application enverra une notification accompagnée d'une sonorité qui alerterait les utilisateurs sélectionnés au préalable pour rejoindre la réunion. La notification d'urgence donnera l'information du titre de la réunion ainsi que le lieu.
+                project_description: Project réalisé en période scolaire. Ce projet a pour but de créer une application qui avec un raccourcis clavier de touche défini (par exemple A + Z+ E), organisant une réunion d'urgence. L'application enverra une notification accompagnée d'une sonorité qui alerterait les utilisateurs sélectionnés au préalable pour rejoindre la réunion. La notification d'urgence donnera l'information du titre de la réunion ainsi que le lieu.
                 icon : ethoryam.png
                 visibility: true
               - project_thumbnail: hack4r.PNG

@@ -108,7 +108,7 @@ author_project_details:
               - project_thumbnail: hack4r.PNG
                 project_title: RFTG
                 project_description: Project réalisé en période scolaire. Ce projet répond à un besoin de location de DVD dans un village vacance. Pour cela nous avons un webservice qui fait l'intermédiaire entre la base de données et notre application web et mobile.
-                icon : logoRftg
+                icon : logoRftg.png
                 visibility: true
               - project_thumbnail: hack4r.PNG
                 project_title: ETHORYAM

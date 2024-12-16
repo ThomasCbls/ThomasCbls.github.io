@@ -102,7 +102,7 @@ author_project_details:
                 visibility: false
               - project_thumbnail: hack4r.PNG
                 project_title: ETHORYAM
-                project_description: Project réalisé en période scolaire.
+                project_description: Project réalisé en période scolaire. Ce projet avait pour but de réaliser une application répondant à un besoin d/'urgence.
                 icon : ethoryam.png
                 visibility: true
               - project_thumbnail: hack4r.PNG

@@ -77,8 +77,15 @@ author_education_details:
                 college_name: 3IFA
                 college_url: https://www.3ifa.fr/
                 college_degree: Alternant BTS SIO
-                description: BTS SIO
+                description: BTS SIO option SLAM
                 icon: 3ifa.png
+                visibility: true
+              - college_logo: mit.png
+                college_name: Bâtiment CFA Alençon
+                college_url: https://www.batimentcfanormandie.fr/le-reseau/nos-centres-de-formations/batiment-cfa-alencon/
+                college_degree: Alternant BTS FED
+                description: BTS FED option Domotique
+                icon: CFA.png
                 visibility: true
               - college_logo: /assets/img/lycee.png
                 college_name: Lycée Robert Garnier

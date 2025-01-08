@@ -45,23 +45,23 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: false
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: false
             - company_name: MTB111
               company_logo: mtb111.png
               company_url: https://www.mtb-generative.com/
               designation: Analyste-Programmeur
               description: Utilisation de divers langages pour developper et debugger un logiciel ou une application.
+              visibility: true
+            - company_name: SOCOPA
+              company_logo: socopa.png
+              company_url: https://www.socopa.fr/
+              designation: Technicien de maintenance dans les énergies
+              description: Assurer l'entretien, le dépannage et l'optimisation des équipements et installations liés aux systèmes de production, de distribution et de stockage d'énergie, pour garentir leur bon fonctionnement et leur conformité aux normes de sécurité.
+              visibility: true
+            - company_name: McDonald's
+              company_logo: macdo.png
+              company_url: https://www.mcdonalds.fr/
+              designation: Équipier
+              description: Assurer la préparation des commandes, le service à la clientèle, le nettoyage et l'entretien de l'espace de travail, contribuant ainsi à l'efficacité et à la satisfaction des clients.
               visibility: true
 
 # Education
@@ -84,7 +84,7 @@ author_education_details:
                 college_name: Bâtiment CFA Alençon
                 college_url: https://www.batimentcfanormandie.fr/le-reseau/nos-centres-de-formations/batiment-cfa-alencon/
                 college_degree: Alternant BTS FED
-                description: BTS FED option Domotique
+                description: BTS FED option Domotique (1 année)
                 icon: CFA.png
                 visibility: true
               - college_logo: /assets/img/lycee.png

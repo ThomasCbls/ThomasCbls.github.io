@@ -103,7 +103,6 @@ author_project_details:
                 icon : logoWks.png
                 visibility: true
                 year: second
-                project_document: /assets/documents/workflow_securise.pdf
               - project_thumbnail: hack4r.PNG
                 project_title: RFTG
                 project_description: Project réalisé en période scolaire. Ce projet répond à un besoin de location de DVD dans un village vacance. Pour cela nous avons un webservice qui fait l'intermédiaire entre la base de données et notre application web et mobile.
@@ -117,14 +116,13 @@ author_project_details:
                 icon : ethoryam.png
                 visibility: true
                 year: first 
-                project_document: /assets/documents/workflow_securise.pdf
+                project_document: /assets/documents/Ethoryam documentation.pdf
               - project_thumbnail: hack4r.PNG
                 project_title: VTT
                 project_description: Projet réalisé en période d'entreprise. VTT est une application permettant de réaliser des tests automatisés, mon rôle au seins de ce projet était de faire du ticketing pour régler divers problèmes.
                 icon : vtt.png
                 visibility: true
                 year: first # Affecté à la première année
-                project_document: /assets/documents/workflow_securise.pdf
 
 
 # social links

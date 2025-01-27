@@ -97,40 +97,30 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: false
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: false
               - project_thumbnail: hack4r.PNG
                 project_title: Workflow sécurisé
                 project_description: Project réalisé en période d'entreprise. Ce projet répond aux besoins interne de l'entreprise qui ne possède pas d'application web pour réaliser ses demandes de congées, de charges mensuelles ainsi que de notes de frais. Alors nous avons réalisé de A à Z une application web répondant aux critères du client.
                 icon : logoWks.png
                 visibility: true
-                year: first
+                year: second
               - project_thumbnail: hack4r.PNG
                 project_title: RFTG
                 project_description: Project réalisé en période scolaire. Ce projet répond à un besoin de location de DVD dans un village vacance. Pour cela nous avons un webservice qui fait l'intermédiaire entre la base de données et notre application web et mobile.
                 icon : logoRftg.png
                 visibility: true
-                year: first # Affecté à la première année
+                year: second
               - project_thumbnail: hack4r.PNG
                 project_title: ETHORYAM
                 project_description: Project réalisé en période scolaire. Ce projet a pour but de créer une application qui avec un raccourcis clavier de touche défini (par exemple A + Z+ E), organisant une réunion d'urgence. L'application enverra une notification accompagnée d'une sonorité qui alerterait les utilisateurs sélectionnés au préalable pour rejoindre la réunion. La notification d'urgence donnera l'information du titre de la réunion ainsi que le lieu.
                 icon : ethoryam.png
                 visibility: true
-                year: second # Affecté à la seconde année
+                year: first 
               - project_thumbnail: hack4r.PNG
                 project_title: VTT
                 project_description: Projet réalisé en période d'entreprise. VTT est une application permettant de réaliser des tests automatisés, mon rôle au seins de ce projet était de faire du ticketing pour régler divers problèmes.
                 icon : vtt.png
                 visibility: true
-                year: second # Affecté à la seconde année
+                year: first # Affecté à la première année
 
 
 # social links

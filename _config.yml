@@ -104,9 +104,9 @@ author_project_details:
                 visibility: true
                 year: second
                 project_documents:
-                        - /assets/documents/Spécifications_besoins_Workflow_Securise.pdf
-                        - /assets/documents/Specifications_fonctionnelles_Workflow_Securise.pdf
-                        - /assets/documents/Spécifications_techniques_Workflow_Securise.pdf
+                        - /assets/documentation/Spécifications_besoins_Workflow_Securise.pdf
+                        - /assets/documentation/Specifications_fonctionnelles_Workflow_Securise.pdf
+                        - /assets/documentation/Spécifications_techniques_Workflow_Securise.pdf
               - project_thumbnail: hack4r.PNG
                 project_title: RFTG
                 project_description: Project réalisé en période scolaire. Ce projet répond à un besoin de location de DVD dans un village vacance. Pour cela nous avons un webservice qui fait l'intermédiaire entre la base de données et notre application web et mobile.

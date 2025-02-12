@@ -119,7 +119,7 @@ author_project_details:
                 icon : ethoryam.png
                 visibility: true
                 year: first 
-                project_document: 
+                project_documents: 
                         - /assets/documentation/Ethoryam documentation.pdf
               - project_thumbnail: hack4r.PNG
                 project_title: VTT

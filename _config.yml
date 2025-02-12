@@ -113,6 +113,9 @@ author_project_details:
                 icon : logoRftg.png
                 visibility: true
                 year: second
+                project_documents:
+                        - /assets/documentation/EDB_RFTG_2024-2025.pdf
+                        - /assets/documentation/SF_RFTG_2024-2025.pdf
               - project_thumbnail: hack4r.PNG
                 project_title: ETHORYAM
                 project_description: Project réalisé en période scolaire. Ce projet a pour but de créer une application qui avec un raccourcis clavier de touche défini (par exemple A + Z+ E), organisant une réunion d'urgence. L'application enverra une notification accompagnée d'une sonorité qui alerterait les utilisateurs sélectionnés au préalable pour rejoindre la réunion. La notification d'urgence donnera l'information du titre de la réunion ainsi que le lieu.

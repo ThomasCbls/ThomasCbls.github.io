@@ -22,13 +22,18 @@ title: Projets
                   <p>
                     <a class="project-link" href="{{ project.project_url }}">{{ project.project_url }}</a>
                   </p>
-                  {% if project.project_document %}
-                    <p>
-                      <a class="document-link" href="{{ project.project_document }}" target="_blank">
-                        Consulter le document
-                      </a>
-                    </p>
-                  {% endif %}
+                    {% if project.project_documents %}
+                      <p>Consulter les documents :</p>
+                      <ul>
+                        {% for document in project.project_documents %}
+                          <li>
+                            <a class="document-link" href="{{ document }}" target="_blank">
+                              {{ document | split: "/" | last }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                 </div>
               </div>
               <br />

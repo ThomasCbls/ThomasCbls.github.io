@@ -2,10 +2,12 @@
 layout: default
 title: Projets
 ---
+
 <div class="col-lg-12">
   <div class="row">
     <div class="col-lg-12">
       {% if site.show_author_project_details == true %}
+      
         <!-- Section Projets Première Année -->
         <div id="author_projects" class="card">
           <h1 class="card-title">Projets première année</h1>
@@ -19,21 +21,23 @@ title: Projets
                 <div class="col-md-6">
                   <h4 class="experience-title">{{ project.project_title }}</h4>
                   <p class="experience-desc">{{ project.project_description }}</p>
-                  <p>
-                    <a class="project-link" href="{{ project.project_url }}">{{ project.project_url }}</a>
-                  </p>
-                    {% if project.project_documents %}
-                      <p>Consulter les documents :</p>
-                      <ul>
-                        {% for document in project.project_documents %}
-                          <li>
-                            <a class="document-link" href="{{ document }}" target="_blank">
-                              {{ document | split: "/" | last }}
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
+                  {% if project.project_url %}
+                    <p>
+                      <a class="project-link" href="{{ project.project_url }}">{{ project.project_url }}</a>
+                    </p>
+                  {% endif %}
+                  {% if project.project_documents %}
+                    <p>Consulter les documents :</p>
+                    <ul>
+                      {% for document in project.project_documents %}
+                        <li>
+                          <a class="document-link" href="{{ document }}" target="_blank">
+                            {{ document | split: "/" | last }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
                 </div>
               </div>
               <br />
@@ -54,15 +58,22 @@ title: Projets
                 <div class="col-md-6">
                   <h4 class="experience-title">{{ project.project_title }}</h4>
                   <p class="experience-desc">{{ project.project_description }}</p>
-                  <p>
-                    <a class="project-link" href="{{ project.project_url }}">{{ project.project_url }}</a>
-                  </p>
-                  {% if project.project_document %}
+                  {% if project.project_url %}
                     <p>
-                      <a class="document-link" href="{{ project.project_document }}" target="_blank">
-                        Consulter le document
-                      </a>
+                      <a class="project-link" href="{{ project.project_url }}">{{ project.project_url }}</a>
                     </p>
+                  {% endif %}
+                  {% if project.project_documents %}
+                    <p>Consulter les documents :</p>
+                    <ul>
+                      {% for document in project.project_documents %}
+                        <li>
+                          <a class="document-link" href="{{ document }}" target="_blank">
+                            {{ document | split: "/" | last }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
                   {% endif %}
                 </div>
               </div>
@@ -70,17 +81,20 @@ title: Projets
             {% endif %}
           {% endfor %}
         </div>
+
       {% endif %}
     </div> <!-- Fermeture de la div col-lg-12 -->
   </div> <!-- Fermeture de la div row -->
 </div> <!-- Fermeture de la div col-lg-12 -->
 
+<style>
 .project-img {
   width: 100%;
   max-width: 400px; /* Ajustez selon la taille souhaitée */
   height: auto;
   object-fit: contain;
 }
+
 .document-link {
   color: #007bff;
   text-decoration: underline;
@@ -90,4 +104,4 @@ title: Projets
 .document-link:hover {
   color: #0056b3;
 }
-
+</style>

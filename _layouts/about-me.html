@@ -214,45 +214,63 @@ layout: default
 
 /* Section Compétences */
 .skills-section {
-  background: #f4f4f4; /* Utilisez la même couleur de fond que la page principale */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+
+/* Couleur de fond par défaut (mode jour) */
+.skills-section {
+  background-color: #fff; /* Fond blanc pour le mode jour */
 }
+
+/* Mode nuit (dark mode) */
+@media (prefers-color-scheme: dark) {
+  .skills-section {
+    background-color: #333; /* Fond foncé pour le mode nuit */
+    color: #fff; /* Couleur du texte en blanc pour plus de lisibilité */
+  }
+}
+
+/* Style de chaque compétence */
 .skill {
   width: 200px;
-  background: #f4f4f4; /* Même couleur de fond que celle de la page pour unifier */
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour la séparation */
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
-.skill:hover {
-  transform: translateY(-5px);
+
+/* Couleur de fond des compétences pour le mode jour */
+.skill {
+  background-color: #fff; /* Fond blanc pour les compétences en mode jour */
 }
-.skill-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+
+/* Mode nuit (dark mode) pour chaque compétence */
+@media (prefers-color-scheme: dark) {
+  .skill {
+    background-color: #444; /* Fond plus foncé pour les compétences en mode nuit */
+  }
 }
-.skill-logo {
-  width: 40px;
-  height: 40px;
-}
+
+/* Barre de progression */
 .progress-bar {
   width: 100%;
-  background: #e0e0e0; /* Toujours cette couleur pour la barre de progression */
+  background: #e0e0e0;
   height: 8px;
   border-radius: 4px;
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
+
+/* Mode nuit (dark mode) - couleur de la barre de progression */
+@media (prefers-color-scheme: dark) {
+  .progress-bar {
+    background-color: #666; /* Barre de progression plus sombre en mode nuit */
+  }
+}
+
 .progress {
   height: 8px;
   background: linear-gradient(to right, #4CAF50, #81C784);

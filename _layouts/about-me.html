@@ -36,24 +36,56 @@ layout: default
       </div>
 
       <!-- Compétences -->
-      <section class="card skills-section">
-        <h2>Mes Compétences</h2>
-        <div class="skills-container">
-          {% for skill in site.author_skills %}
-            {% if skill.visibility == true %}
-              <div class="skill">
-                <div class="skill-content">
-                  <img src="/assets/img/{{ skill.icon }}" class="skill-logo" alt="{{ skill.name }}" />
-                  <p>{{ skill.name }}</p>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress" style="width: {{ skill.percentage }}%;" data-percent="{{ skill.percentage }}%"></div>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </section>
+    <section id="skills" class="skills-section">
+  <h2>Mes Compétences</h2>
+  <div class="skills-container">
+      <div class="skill">
+          <div class="skill-content">
+              <img src="/assets/img/html js css.png" alt="HTML" class="skill-logo">
+              <p>HTML / CSS / JS</p>
+          </div>
+          <div class="progress-bar">
+              <div class="progress" style="width: 90%;" data-percent="90%"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-content">
+              <img src="/assets/img/php.png" alt="PHP" class="skill-logo">
+              <p>PHP</p>
+          </div>
+          <div class="progress-bar">
+              <div class="progress" style="width: 85%;" data-percent="85%"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-content">
+              <img src="/assets/img/C.png" alt="C#" class="skill-logo">
+              <p>C#</p>
+          </div>
+          <div class="progress-bar">
+              <div class="progress" style="width: 75%;" data-percent="75%"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-content">
+              <img src="/assets/img/git.png" alt="GIT" class="skill-logo">
+              <p>GIT</p>
+          </div>
+          <div class="progress-bar">
+              <div class="progress" style="width: 80%;" data-percent="80%"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-content">
+              <img src="/assets/img/redmine.png" alt="Redmine" class="skill-logo">
+              <p>Redmine</p>
+          </div>
+          <div class="progress-bar">
+              <div class="progress" style="width: 85%;" data-percent="85%"></div>
+          </div>
+      </div>
+  </div>
+</section>
     </div>
 
     <!-- Contenu principal -->

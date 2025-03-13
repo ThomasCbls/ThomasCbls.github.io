@@ -212,14 +212,13 @@ body {
   object-fit: contain;
 }
 
-/* Section Compétences */
+/* Section Compétences (Harmonisation avec les autres sections) */
 .skills-section {
   text-align: center;
   padding: 30px;
   border-radius: 12px;
-  background: #2c3e50;  /* Couleur sombre pour harmoniser avec le reste */
-  color: #ecf0f1;  /* Texte clair pour le contraste */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;  /* Fond blanc comme les autres sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour correspondre aux autres cartes */
   margin-top: 20px;
   transition: transform 0.3s ease-in-out;
 }
@@ -238,8 +237,8 @@ body {
   width: 200px;
   padding: 20px;
   border-radius: 8px;
-  background: #34495e;  /* Arrière-plan plus foncé pour chaque compétence */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fafafa;  /* Fond clair similaire aux autres cartes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
   transition: transform 0.3s ease-in-out;
 }
 .skill:hover {
@@ -252,14 +251,14 @@ body {
 }
 .progress-bar {
   width: 100%;
-  background: #7f8c8d;  /* Couleur plus claire pour la barre de progression */
+  background: #e0e0e0;  /* Fond de la barre de progression gris clair */
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
 }
 .progress {
   height: 10px;
-  background: #27ae60;  /* Couleur verte pour la progression */
+  background: #4caf50;  /* Progression verte */
   transition: width 1s ease-in-out;
 }
 </style>

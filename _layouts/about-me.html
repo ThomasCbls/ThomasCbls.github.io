@@ -36,20 +36,21 @@ layout: default
       </div>
 
       <!-- Compétences -->
-      <section class="skills-section">
+      <section class="card skills-section">
         <h2>Mes Compétences</h2>
         <div class="skills-container">
-          {% assign skills = site.skills %}
-          {% for skill in skills %}
-            <div class="skill">
-              <div class="skill-content">
-                <img src="/assets/img/{{ skill.icon }}" class="skill-logo" alt="{{ skill.name }}" />
-                <p>{{ skill.name }}</p>
+          {% for skill in site.author_skills %}
+            {% if skill.visibility == true %}
+              <div class="skill">
+                <div class="skill-content">
+                  <img src="/assets/img/{{ skill.icon }}" class="skill-logo" alt="{{ skill.name }}" />
+                  <p>{{ skill.name }}</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="width: {{ skill.percentage }}%;" data-percent="{{ skill.percentage }}%"></div>
+                </div>
               </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: {{ skill.percentage }}%;" data-percent="{{ skill.percentage }}%"></div>
-              </div>
-            </div>
+            {% endif %}
           {% endfor %}
         </div>
       </section>
@@ -181,15 +182,10 @@ layout: default
 
   /* Section Compétences */
   .skills-section {
-    text-align: center;
-    padding: 30px 20px;
     background: #fff;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .skills-section h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
   }
   .skills-container {
     display: flex;

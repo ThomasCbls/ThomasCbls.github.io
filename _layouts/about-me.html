@@ -1,155 +1,80 @@
 ---
 layout: default
 ---
-<div class="col-lg-12">
+
+<div class="container">
   <div class="row">
+    <!-- Profil -->
     <div class="col-lg-4">
-      <div class="card" id="profile-card">
+      <div class="card profile-card">
         <a href="/">
-          <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" style="object-fit: contain;" />
+          <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" />
         </a>
         <h1 class="profile-name">{{ site.title }}</h1>
         <p class="profile-bio">{{ site.subtitle }}</p>
-        <p class="profile-links">
+        
+        <div class="social-links">
           {% if site.twitter_username %}
-            <a class="social-link" href="http://twitter.com/{{ site.twitter_username }}">
-              <i class="fab fa-twitter"></i>
-            </a>
-          {% endif %}
-          {% if site.facebook_username %}
-            <a class="social-link" href="http://facebook.com/{{ site.facebook_username }}">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          {% endif %}
-          {% if site.instagram_username %}
-            <a class="social-link" href="http://instagram.com/{{ site.instagram_username }}">
-              <i class="fab fa-instagram"></i>
-            </a>
-          {% endif %}
-          {% if site.medium_username %}
-            <a class="social-link" href="http://medium.com/@{{ site.medium_username }}">
-              <i class="fab fa-medium-m"></i>
-            </a>
-          {% endif %}
-          {% if site.github_username %}
-            <a class="social-link" href="http://github.com/{{ site.github_username }}" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          {% endif %}
-          {% if site.cv_username %}
-            <a class="social-link" href="{{ site.baseurl }}/{{ site.cv_username }}" target="_blank">
-              <img src="/assets/img/cv.png" style="width: 20px; height: 20px;">
-            </a>
-          {% endif %}
-          {% if site.behance_username %}
-            <a class="social-link" href="http://behance.net/{{ site.behance_username }}">
-              <i class="fab fa-behance"></i>
-            </a>
+            <a href="http://twitter.com/{{ site.twitter_username }}" class="social-link"><i class="fab fa-twitter"></i></a>
           {% endif %}
           {% if site.linkedin_username %}
-            <a class="social-link" href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+            <a href="http://linkedin.com/in/{{ site.linkedin_username }}" class="social-link"><i class="fab fa-linkedin"></i></a>
           {% endif %}
-          {% if site.telegram_username %}
-            <a class="social-link" href="http://t.me/{{ site.telegram_username }}">
-              <i class="fab fa-telegram-plane"></i>
-            </a>
+          {% if site.github_username %}
+            <a href="http://github.com/{{ site.github_username }}" class="social-link"><i class="fab fa-github"></i></a>
           {% endif %}
-          {% if site.dribbble_username %}
-            <a class="social-link" href="https://dribbble.com/{{ site.dribbble_username }}">
-              <i class="fab fa-dribbble"></i>
-            </a>
-          {% endif %}
-          {% if site.flickr_username %}
-            <a class="social-link" href="https://www.flickr.com/photos/{{ site.flickr_username }}">
-              <i class="fab fa-flickr"></i>
-            </a>
-          {% endif %}
-        </p>
+        </div>
 
         {% if site.author_location %}
-          <h6>
-            <a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" target="_blank" class="social-link">
-              <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i> 
+            <a href="https://www.google.com/maps/search/?api=1&query={{ site.author_location }}" target="_blank">
+              {{ site.author_location }}
             </a>
-          </h6>
+          </p>
         {% endif %}
       </div>
-    <section id="skills" class="skills-section">
-  <h2>Mes Compétences</h2>
-  <div class="skills-container">
-      <div class="skill">
-          <div class="skill-content">
-              <img src="/assets/img/html js css.png" alt="HTML" class="skill-logo">
-              <p>HTML / CSS / JS</p>
-          </div>
-          <div class="progress-bar">
-              <div class="progress" style="width: 90%;" data-percent="90%"></div>
-          </div>
-      </div>
-      <div class="skill">
-          <div class="skill-content">
-              <img src="/assets/img/php.png" alt="PHP" class="skill-logo">
-              <p>PHP</p>
-          </div>
-          <div class="progress-bar">
-              <div class="progress" style="width: 85%;" data-percent="85%"></div>
-          </div>
-      </div>
-      <div class="skill">
-          <div class="skill-content">
-              <img src="/assets/img/C.png" alt="C#" class="skill-logo">
-              <p>C#</p>
-          </div>
-          <div class="progress-bar">
-              <div class="progress" style="width: 75%;" data-percent="75%"></div>
-          </div>
-      </div>
-      <div class="skill">
-          <div class="skill-content">
-              <img src="/assets/img/git.png" alt="GIT" class="skill-logo">
-              <p>GIT</p>
-          </div>
-          <div class="progress-bar">
-              <div class="progress" style="width: 80%;" data-percent="80%"></div>
-          </div>
-      </div>
-      <div class="skill">
-          <div class="skill-content">
-              <img src="/assets/img/redmine.png" alt="Redmine" class="skill-logo">
-              <p>Redmine</p>
-          </div>
-          <div class="progress-bar">
-              <div class="progress" style="width: 85%;" data-percent="85%"></div>
-          </div>
-      </div>
-  </div>
-</section>
-      
+
+      <!-- Compétences -->
+      <section class="skills-section">
+        <h2>Mes Compétences</h2>
+        <div class="skills-container">
+          {% assign skills = site.skills %}
+          {% for skill in skills %}
+            <div class="skill">
+              <div class="skill-content">
+                <img src="/assets/img/{{ skill.icon }}" class="skill-logo" alt="{{ skill.name }}" />
+                <p>{{ skill.name }}</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: {{ skill.percentage }}%;" data-percent="{{ skill.percentage }}%"></div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+
+    <!-- Contenu principal -->
     <div class="col-lg-8">
       {% if site.author_bio %}
         <div class="card">
-          <h1 class="card-title">À propos de moi</h1>
+          <h2>À propos de moi</h2>
           <p>{{ site.author_bio }}</p>
         </div>
       {% endif %}
 
       {% if site.show_author_work_experiences == true %}
         <div class="card">
-          <h1 class="card-title">Experience</h1>
-          <br />
+          <h2>Expérience</h2>
           {% for exp in site.author_work_experiences %}
             {% if exp.visibility == true %}
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" style="object-fit: contain;" />
-                </div>
-                <div class="col-md-10">
-                  <h4 class="experience-title">{{ exp.designation }}</h4>
-                  <h6 class="experience-info">{{ exp.company_name}}</h6>
-                  <p class="experience-desc">{{ exp.description }}</p>
-                  <p><a href="{{exp.company_url}}" target="_blank">{{ exp.company_url}}</a></p>
+              <div class="experience">
+                <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
+                <div>
+                  <h4>{{ exp.designation }}</h4>
+                  <p>{{ exp.company_name }} - <a href="{{ exp.company_url }}" target="_blank">{{ exp.company_url }}</a></p>
+                  <p>{{ exp.description }}</p>
                 </div>
               </div>
             {% endif %}
@@ -159,22 +84,17 @@ layout: default
 
       {% if site.show_author_education_details == true %}
         <div class="card">
-          <h1 class="card-title">Études</h1>
-          <br />
+          <h2>Études</h2>
           {% for detail in site.author_education_details %}
             {% if detail.visibility == true %}
-              <div class="row" id="education-card">
-                <div class="col-md-2">
-                  <img src="/assets/img/{{detail.icon}}" class="company-logo" style="object-fit: contain;" />
-                </div>
-                <div class="col-md-10">
-                  <h4 class="experience-title">{{ detail.college_degree }}</h4>
-                  <h6 class="experience-info">{{ detail.college_name }}</h6>
-                  <p class="experience-desc">{{ detail.description }}</p>
-                  <p><a href="{{ detail.college_url }}" target="_blank">{{ detail.college_url }}</a></p>
+              <div class="experience">
+                <img src="/assets/img/{{ detail.icon }}" class="company-logo" />
+                <div>
+                  <h4>{{ detail.college_degree }}</h4>
+                  <p>{{ detail.college_name }} - <a href="{{ detail.college_url }}" target="_blank">{{ detail.college_url }}</a></p>
+                  <p>{{ detail.description }}</p>
                 </div>
               </div>
-              <br />
             {% endif %}
           {% endfor %}
         </div>
@@ -183,11 +103,18 @@ layout: default
   </div>
 </div>
 
+<!-- STYLES -->
 <style>
+  /* Général */
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f4f4f4;
     margin: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
   }
   .card {
     background: #fff;
@@ -200,23 +127,29 @@ layout: default
   .card:hover {
     transform: translateY(-5px);
   }
+
+  /* Profil */
+  .profile-card {
+    text-align: center;
+  }
   .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
+    margin: auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
   .profile-name {
-    text-align: center;
     font-size: 24px;
     margin-top: 10px;
   }
   .profile-bio {
-    text-align: center;
     color: #666;
     font-size: 16px;
+  }
+  .social-links {
+    margin-top: 10px;
   }
   .social-link {
     color: #555;
@@ -227,106 +160,74 @@ layout: default
   .social-link:hover {
     color: #007bff;
   }
-  .experience-title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  .experience-info {
+  .location {
+    font-size: 14px;
     color: #888;
-    font-size: 14px;
   }
-  .experience-desc {
-    font-size: 14px;
-    color: #555;
+
+  /* Expériences et études */
+  .experience {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
   }
   .company-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: contain;
   }
-/* Section compétences */
-.skills-section {
+
+  /* Section Compétences */
+  .skills-section {
     text-align: center;
-    padding: 50px 20px;
-    background: #f9f9f9;
+    padding: 30px 20px;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.skills-section h2 {
-    font-size: 26px;
-    color: #333;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.skills-container {
+  }
+  .skills-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .skills-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.skill {
-    width: 250px;
-    background: #fff;
-    padding: 15px;
+    gap: 15px;
+  }
+  .skill {
+    width: 200px;
+    background: #f9f9f9;
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-}
-
-.skill:hover {
+  }
+  .skill:hover {
     transform: translateY(-5px);
-}
-
-.skill-content {
+  }
+  .skill-content {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
-}
-
-.skill-logo {
-    width: 50px;
-    height: 50px;
-}
-
-.skill-content p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-}
-
-.progress-bar {
+    margin-bottom: 8px;
+  }
+  .skill-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .progress-bar {
     width: 100%;
     background: #e0e0e0;
-    height: 10px;
-    border-radius: 5px;
+    height: 8px;
+    border-radius: 4px;
     overflow: hidden;
-    position: relative;
-}
-
-.progress {
-    height: 10px;
+  }
+  .progress {
+    height: 8px;
     background: linear-gradient(to right, #4CAF50, #81C784);
-    width: 0;  /* Animation JS */
     transition: width 1.5s ease-in-out;
-}
-
-.progress::after {
-    content: attr(data-percent);
-    position: absolute;
-    right: 10px;
-    top: -22px;
-    font-size: 14px;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
+  }
 </style>
-
-
-

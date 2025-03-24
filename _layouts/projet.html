@@ -90,6 +90,48 @@ title: Projets
           {% endfor %}
         </div>
 
+              <!-- Section annexe -->
+        <div id="annexe_project" class="card">
+          <h1 class="card-title">Annexe</h1>
+          <br />
+          {% for project in site.author_project_details %}
+            {% if project.visibility == true and project.year == "first" %}
+              <div class="row project-card">
+                <div class="col-md-6">
+                  <img src="/assets/img/{{ project.icon }}" class="project-img" />
+                </div>
+                <div class="col-md-6">
+                  <h4 class="experience-title">{{ project.project_title }}</h4>
+                  <p class="experience-desc">{{ project.project_description }}</p>
+                  
+                  {% if project.project_url %}
+                    <p>
+                      <a class="project-link" href="{{ project.project_url }}" target="_blank">Voir le projet</a>
+                    </p>
+                  {% endif %}
+                  
+                  {% if project.project_documents %}
+                    <details class="document-dropdown">
+                      <summary class="document-button">📂 Consulter les documents</summary>
+                      <ul>
+                        {% for document in project.project_documents %}
+                          <li>
+                            <a class="document-link" href="{{ document }}" target="_blank">
+                              {{ document | split: "/" | last }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </details>
+                  {% endif %}
+                </div>
+              </div>
+              <br />
+            {% endif %}
+          {% endfor %}
+        </div>
+      
+
       {% endif %}
     </div> <!-- Fermeture de la div col-lg-12 -->
   </div> <!-- Fermeture de la div row -->

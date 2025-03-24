@@ -91,26 +91,25 @@ title: Projets
         </div>
 
               <!-- Section annexe -->
-        <div id="annexe_project" class="card">
-          <center></center><h1 class="card-title">Annexe</h1></center>
-          <br />                 
-                  {% if annexe.project_documents %}
-                    <details class="document-dropdown">
-                      <summary class="document-button">📂 Consulter le document</summary>
-                      <ul>
-                        {% for document in annexe.project_documents %}
-                          <li>
-                            <a class="document-link" href="{{ document }}" target="_blank">
-                              {{ document | split: "/" | last }}
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    </details>
-                  {% endif %}
-                </div>
-              </div>
-        </div>
+      <div id="annexe_project" class="card">
+        <h1 class="card-title" style="text-align: center;">Annexe</h1>
+        <br />
+        {% if site.annexe_project.project_documents %}
+          <details class="document-dropdown">
+            <summary class="document-button">📂 Consulter le document</summary>
+            <ul>
+              {% for document in site.annexe_project.project_documents %}
+                <li>
+                  <a class="document-link" href="{{ document }}" target="_blank">
+                    {{ document | split: "/" | last }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
+      </div>
+
       
 
       {% endif %}

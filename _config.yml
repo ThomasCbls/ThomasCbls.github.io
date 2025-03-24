@@ -132,7 +132,7 @@ author_project_details:
 #annexe
 annexe_project :
                project_documents: 
-                        - /assets/documentation/Ethoryam 6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.xlsx
+                        - /assets/documentation/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.xlsx
   
 
 # social links

@@ -132,7 +132,7 @@ author_project_details:
 #annexe
 annexe_project :
                project_documents: 
-                        - assets/documentation/8-1 BTS SIO -2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse.xlsx
+                        - assets/documentation/8-1 BTS SIO -2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse.xls
                         
 
 # social links
